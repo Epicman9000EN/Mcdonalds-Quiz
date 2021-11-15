@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="Mcdonalds Quiz.css" rel="stylesheet">
+</head>
+<body>
+  <h1>
+    <mark>
+      Mcdonald's Quiz
+    </mark>
+  </h1>
+  <form>
+    <label for="Nuggets">
+	  What is the largest number of Chicken Nuggets you can get in 1 item?
+	</label>
+    <input type="text" id="nuggets" name="nuggets"><br>
+	
+	<label for="Sauce">
+	  What sauces are in a cheeseburger?
+	</label>
+	<input type="text" id="Sauce" name="Sauce">
+	
+	<p> Do you like Chicken Nuggets?</p>
+	
+	<label for="Yes">
+	  Yes
+	</label>
+	<input type="radio" id="Yes" name="Cheese">
+	
+	<label for="No">
+      No
+	</label>
+	<input type="radio" id="No" name="Cheese">
+	
+	<label for"Maybe">
+	  Maybe
+	</label>
+	<input type="radio" id="Maybe" name="Cheese">
+	
+	<label for="Sometimes">
+	  Sometimes
+	</label>
+	<input type="radio" id="Sometimes" name="Cheese">
+	
+	<p>What ingredient(s) is <strong>NOT</strong> in a quarter pounder?</p>
+	
+	<label for="Cheese">
+	  Cheese
+	</label>
+	<input type="checkbox" id="Cheese" name="Quarter"><br>
+	
+	<label for="Pickles">
+	  Pickles
+	</label>
+	<input type="checkbox" id="Pickles" name="Quarter"><br>
+	
+	<label for="Lettuce">
+	  Lettuce
+	</label>
+	<input type="checkbox" id="Lettuce" name="Quarter"><br>
+	
+	<label for="Onions">
+	  Onions
+	</label>
+	<input type="checkbox" id="Onions" name="Quarter"><br>
+	
+	<br><br>
+	<script src="Mcdonalds Quiz.js"></script>
+	<button type="button" onClick="Submit()">Submit</button>
+	<p class="Nuggets"></p>
+	<p class="Cheeseburger"></p>
+	<p class="Chicken"></p>
+	<p class="Quarter"></p>
+	<p class="score"></p>
+  </form>
+</body>
+</html>
