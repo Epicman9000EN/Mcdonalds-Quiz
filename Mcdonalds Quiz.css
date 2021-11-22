@@ -1,12 +1,13 @@
-mark {
+mark {  
 	color: yellow;
 	font-family: 'Lato', sans-serif;
 }
 body {
-	color: red;
-	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
 	text-align: center;
-	background-image: url("CheeseBurger Wallpaper.jpg");
+	background-image: url("Burger.jpg");
 	background-position: ;
 	height: 100%;
 }	
@@ -15,4 +16,4 @@ mark {
 	padding: 10px;
 }
 
-				
+        

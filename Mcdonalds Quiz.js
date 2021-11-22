@@ -1,4 +1,5 @@
 function Submit() {
+	var counter = 0
 	var Score = 0
 	var Nuggets = document.getElementById("nuggets").value;
 	var Cheeseburger = document.getElementById("Sauce").value;
@@ -23,21 +24,47 @@ function Submit() {
 	
 	if (Yes == true)  {
 		Score += 1;
+		counter += 1;
 	}
+	document.getElementsByClassName("Chicken")[0].innerHTML = "Correct Answer is Yes " + counter + "/1"
+	counter = 0;
+	
 	if (Nuggets == 20) {
 		Score += 1;
+		counter += 1;
 	}
-	console.log(Cheeseburger)
+	document.getElementsByClassName("Nuggets")[0].innerHTML = "Correct Answer is 20 "+ counter + "/1"
+	counter = 0;
+	
 	if (Cheeseburger.includes("ketchup") == true && Cheeseburger.includes("mustard") == true) {
 		Score += 1;
+		counter += 1;
 	}
+	document.getElementsByClassName("Cheeseburger")[0].innerHTML = "Correct Answer is Ketchup and Mustard "+ counter + "/1"
+	counter = 0;
+	
 	if (Lettuce == true && Cheese == false && Pickles == false && Onions == false) {
 		Score += 1;
+		counter += 1;
 	}
-	console.log(Score)
-	document.getElementsByClassName("Nuggets")[0].innerHTML = "Correct Answer is 20"
-	document.getElementsByClassName("Cheeseburger")[0].innerHTML = "Correct Answer is Ketchup and Mustard"
-	document.getElementsByClassName("Chicken")[0].innerHTML = "Correct Answer is Yes"
-	document.getElementsByClassName("Quarter")[0].innerHTML = "Correct Answer is Lettuce"
+	document.getElementsByClassName("Quarter")[0].innerHTML = "Correct Answer is Lettuce "+ counter + "/1"
+	counter = 0;
+	
+	if (Score == 0 || Score == 1 ) {
+		document.getElementsByClassName("Fail")[0].innerHTML = "You Failed"
+	} 
+
+	if (Score == 2 || Score == 3) {
+		document.getElementsByClassName("Pass")[0].innerHTML = "You Pass"
+	} 
+
+	if (Score == 4) {
+		document.getElementsByClassName("Good")[0].innerHTML = "Good Job"
+	} 
+	
+	
+	
+	
 	document.getElementsByClassName("score")[0].innerHTML = "Your Score: " + Score + "/4"
+	
 }
